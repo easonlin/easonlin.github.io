@@ -24,7 +24,12 @@
 
 ### Data Science Trap
 1. Assuming data is correct and complete.
-  * We may find data lose by some simple sum or count.
-  * We shouldn't assume the time range information on folder or file name is exactly match the data.
-2. Limiting tools for data analysis.
- 
+   * We may find data lose by some simple sum or count.
+   * We shouldn't assume the time range information on folder or file name is exactly match the data.
+1. Limiting tools for data analysis.
+   * Ad-hoc analysis always encounter new issues that need new tools to workround it.
+   * It's better to prepare separated analysis envieronment from production.
+1. Analysing for analysing
+   * We must clarify target and questions before analysis
+1. Not sharing
+1. Expecting full-stack data scientist
