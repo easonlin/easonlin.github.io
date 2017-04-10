@@ -26,5 +26,5 @@
 1. Assuming data is correct and complete.
   * We may find data lose by some simple sum or count.
   * We shouldn't assume the time range information on folder or file name is exactly match the data.
-1. Limiting tools for data analysis.
+2. Limiting tools for data analysis.
  
