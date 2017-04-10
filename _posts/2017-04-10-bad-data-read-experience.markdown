@@ -13,3 +13,11 @@
 1. Programable data source
 1. Separating each transition steps
 
+### How to create conpaign on Kaggle
+1. Defining a specific question that fit to your problem.
+1. Prototyping and verifying if we can solve our problem by answering the question.
+1. Preparing training data, and separating data to training, testing and answer.
+1. (Optional) Extracting features.
+1. Defining input/output and encoding data.
+1. Describing qestion on Kaggle and answering questions from user.
+1. Chosing best solution and integrating to our product.
