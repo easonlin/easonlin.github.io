@@ -21,3 +21,10 @@
 1. Defining input/output and encoding data.
 1. Describing qestion on Kaggle and answering questions from user.
 1. Chosing best solution and integrating to our product.
+
+### Data Science Trap
+1. Assuming data is correct and complete.
+ We may find data lose by some simple sum or count.
+ We shouldn't assume the time range information on folder or file name is exactly match the data.
+1. Limiting tools for data analysis.
+ 
