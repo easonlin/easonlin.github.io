@@ -33,3 +33,18 @@
    * We must clarify target and questions before analysis
 1. Not sharing
 1. Expecting full-stack data scientist
+
+### Biase Source on Survey
+1. Estimated biased, how do we extimate on data miss?
+    * Just use it
+    * Replacing by admainistrative data
+    * Weighting light
+    * Dropping it
+1. Wrong reporting
+    * Is it random?
+    * Does it happen on some specific fields?
+    * Could we replace it by admanistrative data?
+    * Could we reduce it by reorganize the survay?
+1. Topcoding/bottomcoding
+1. Proxy reporting
+1. Sample selection
