@@ -49,3 +49,11 @@ Q. Ethan McCallum, O'Reilly
 1. Topcoding/bottomcoding
 1. Proxy reporting
 1. Sample selection
+
+### Lab
+1. Working together with whom made data. 
+1. Experiments in Lab without steps log is invalid
+1. Every value should be checked by workmate before inserting to database.
+1. Limit field values and automatically filling excel to database
+1. Always checking type, precondition, and reasonable value range. Including measure in variable naming rule
+
