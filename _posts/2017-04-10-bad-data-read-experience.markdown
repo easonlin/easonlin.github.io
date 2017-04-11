@@ -1,4 +1,5 @@
 # Bad Data Handbook 
+Q. Ethan McCallum, O'Reilly
 
 ### How do we measure the quality of data?
 1. Do we have all data we need to answer the question?
