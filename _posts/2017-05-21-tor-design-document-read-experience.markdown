@@ -35,7 +35,7 @@ Frustrate attackers from linking communication partners.
 
 ### Message Transition
 <img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/tor_message.png" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />
+alt="IMAGE ALT TEXT HERE" width="240" height="60" border="2" />
 
 ### Onion Proxy
 Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
