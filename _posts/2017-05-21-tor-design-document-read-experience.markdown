@@ -52,12 +52,12 @@ alt="IMAGE ALT TEXT HERE" width="480" height="240" border="0" />
 Client send create message by "Message Transition" to specific onion router.
 
 1. Client request key from first onion router.
-1. Client decrypt key response message to blue key.
+1. Client decrypt key response message by RSA to blue key.
 1. Client encrypt key request message with second onion router by blue key as blue encrypted data, 
 and send it to first onion router.
 1. First onion router decrypt blue encrypted data and request key from second onion router.
 1. First onion router encrypt key response message as blue encrypted data and send it to client.
-1. Client decrypt blue encrypted data to key response message and decrypt it to green key.
+1. Client decrypt blue encrypted data to key response message and decrypt it by RSA to green key.
 1. Loop
 
 ### Circuit Destruction
