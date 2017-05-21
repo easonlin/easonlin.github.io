@@ -29,6 +29,13 @@ Frustrate attackers from linking communication partners.
 1. Not peer-to-peer
 1. Not secure against end-to-end attacks
 1. No protocol normalization
+1. Not steganographic
+
+## Design
+
+### Message Transition
+<img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/tor_message.png" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />
 
 ### Onion Proxy
 Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
