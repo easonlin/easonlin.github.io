@@ -35,7 +35,20 @@ Frustrate attackers from linking communication partners.
 
 ### Message Transition
 <img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/tor_message.png" 
-alt="IMAGE ALT TEXT HERE" width="240" height="60" border="2" />
+alt="IMAGE ALT TEXT HERE" width="240" height="60" border="0" />
+
+1. Client encrypt message and external service by red key as red encrypted data, 
+encrypt red encrypted data and exit node router by green key as green encrypted data, 
+and encrypt green encrypted data and second onion router by blue key as blue encrypted data.
+1. Client send blue encrypted data to first onion router.
+1. First onion router decrypt blue encrypted data to green encrypted data and send it to second onion router.
+1. Second onion router decrypt green encrypted data to red encrypted data and send it to exit node.
+1. Exit node router decrypt red encrypted data to message and send it to external service.
+
+### Circuit Creation
+<img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/2017-05-21-tor-design-document-read-experience-create-circuit.png" 
+alt="IMAGE ALT TEXT HERE" width="240" height="60" border="0" />
+
 
 ### Onion Proxy
 Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
