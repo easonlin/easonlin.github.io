@@ -49,7 +49,7 @@ and encrypt green encrypted data with second onion router by blue key as blue en
 <img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/2017-05-21-tor-design-document-read-experience-create-circuit.png" 
 alt="IMAGE ALT TEXT HERE" width="480" height="240" border="0" />
 
-Client send create message by "Message Transition" to specific onion router.
+Client send create and extend message by "Message Transition" to specific onion router.
 
 1. Client request key from first onion router.
 1. Client decrypt key response message by RSA to blue key.
@@ -62,6 +62,14 @@ and send it to first onion router.
 
 ### Circuit Destruction
 Client send destroy or truncat message by "Message Transition" to the specific onion router.
+
+### DNS query
+1. For http, Tor is like a proxy, 
+client could identify external service by hostname and port (www.exmple.com:80)
+exit node do the DNS resolving.
+1. Tor also provided remote hostname lookup on onion router. 
+Client could request onion router to query DNS.
+
 
 ### Onion Proxy
 Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
