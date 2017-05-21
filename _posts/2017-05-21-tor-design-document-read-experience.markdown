@@ -37,9 +37,9 @@ Frustrate attackers from linking communication partners.
 <img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/tor_message.png" 
 alt="IMAGE ALT TEXT HERE" width="240" height="60" border="0" />
 
-1. Client encrypt message and external service by red key as red encrypted data, 
-encrypt red encrypted data and exit node router by green key as green encrypted data, 
-and encrypt green encrypted data and second onion router by blue key as blue encrypted data.
+1. Client encrypt message with external service by red key as red encrypted data, 
+encrypt red encrypted data with exit node router by green key as green encrypted data, 
+and encrypt green encrypted data with second onion router by blue key as blue encrypted data.
 1. Client send blue encrypted data to first onion router.
 1. First onion router decrypt blue encrypted data to green encrypted data and send it to second onion router.
 1. Second onion router decrypt green encrypted data to red encrypted data and send it to exit node.
@@ -47,8 +47,21 @@ and encrypt green encrypted data and second onion router by blue key as blue enc
 
 ### Circuit Creation
 <img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/2017-05-21-tor-design-document-read-experience-create-circuit.png" 
-alt="IMAGE ALT TEXT HERE" width="240" height="60" border="0" />
+alt="IMAGE ALT TEXT HERE" width="480" height="240" border="0" />
 
+Client send create message by "Message Transition" to specific onion router.
+
+1. Client request key from first onion router.
+1. Client decrypt key response message to blue key.
+1. Client encrypt key request message with second onion router by blue key as blue encrypted data, 
+and send it to first onion router.
+1. First onion router decrypt blue encrypted data and request key from second onion router.
+1. First onion router encrypt key response message as blue encrypted data and send it to client.
+1. Client decrypt blue encrypted data to key response message and decrypt it to green key.
+1. Loop
+
+### Circuit Destruction
+Client send destroy or truncat message by "Message Transition" to the specific onion router.
 
 ### Onion Proxy
 Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
