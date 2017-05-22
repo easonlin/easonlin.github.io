@@ -31,7 +31,7 @@ Frustrate attackers from linking communication partners.
 1. No protocol normalization
 1. Not steganographic
 
-## Design
+## Design for hidden clients
 
 ### Message Transition
 <img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/tor_message.png" 
@@ -70,6 +70,29 @@ exit node do the DNS resolving.
 1. Tor also provided remote hostname lookup on onion router. 
 Client could request onion router to query DNS.
 
+### Directory Servers
+- A small group of redundant, well-known onion routers as directory servers.
+- Onion routers periodically publish signed statements of their state to each directory server.
+- Client fetch current network state and router lists from directory servers.
+
+## Design for hidden services
+
+### Considerations
+1. Access-control
+1. Robustness
+1. Smear-resistance
+1. Application-transparency
+
+### Circuit Creation
+1. Server choose some onion routers as its introduction points, 
+create circuit to them and advertise them.
+1. Client choose one onion router as its redezvous point and create circuit to it.
+1. Client choose one introduction point, 
+create circuit to it and inform server of the redezvous point via this circuit.
+1. Server create circuit to the redezvous point.
+1. Client/Server transmit data via the redezvous point circuit.
+
+## Integration with user applications
 
 ### Onion Proxy
 Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
