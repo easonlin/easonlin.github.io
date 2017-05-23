@@ -34,8 +34,7 @@ Frustrate attackers from linking communication partners.
 ## Design for hidden clients
 
 ### Message Transition
-<img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/tor_message.png" 
-alt="IMAGE ALT TEXT HERE" width="240" height="60" border="0" />
+<img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/tor_message.png" alt="IMAGE ALT TEXT HERE" width="240" height="60" border="0" />
 
 1. Client encrypt message with external service by red key as red encrypted data, 
 encrypt red encrypted data with exit node router by green key as green encrypted data, 
