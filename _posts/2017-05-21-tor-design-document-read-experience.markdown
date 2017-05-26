@@ -34,7 +34,7 @@ Frustrate attackers from linking communication partners.
 ## Design for hidden clients
 
 ### Message Transition
-<img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/tor_message.png" alt="IMAGE ALT TEXT HERE" width="240" height="60" border="0" />
+<img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/_2017-05-21-tor-design-document-read-experience-tor-message.png" alt="IMAGE ALT TEXT HERE" width="240" height="60" border="0" />
 
 1. Client encrypt message with external service by red key as red encrypted data, 
 encrypt red encrypted data with exit node router by green key as green encrypted data, 
@@ -45,7 +45,7 @@ and encrypt green encrypted data with second onion router by blue key as blue en
 1. Exit node router decrypt red encrypted data to message and send it to external service.
 
 ### Circuit Creation
-<img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/2017-05-21-tor-design-document-read-experience-create-circuit.png" 
+<img src="https://raw.githubusercontent.com/easonlin/easonlin.github.io/master/_posts/_2017-05-21-tor-design-document-read-experience-create-circuit.png" 
 alt="IMAGE ALT TEXT HERE" width="480" height="240" border="0" />
 
 Client send create and extend message by "Message Transition" to specific onion router.
